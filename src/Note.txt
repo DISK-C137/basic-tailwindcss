@@ -1,0 +1,18 @@
+- กำหนดสีพื้นหลัง (Background) = bg-red-300
+
+- การจัดการข้อความ (Typography)
+    *สีข้อความ (Color) = text-red-300 ถึง 900
+
+    *ขนาดข้อความ (Size) = Link: https://tailwindcss.com/docs/font-size
+
+    *รูปแบบข้อความ (Style) = font-italic | uppercase | lowercase | capitalize
+
+    *ความหนาข้อความ (Weight) = Link: https://tailwindcss.com/docs/font-weight
+
+    *ตำแหน่งข้อความ (Alignment) = text-center | text-right | text-left
+
+    *ความโปร่งใส (Opacity) = text-opacity-0 | text-opacity-50 ถึง 100
+
+- ความกว้างและความสูง
+    * w = กำหนดความกว้าง (width) link: https://tailwindcss.com/docs/width
+    * h = กำหนดความสูง (height) link: https://tailwindcss.com/docs/height
