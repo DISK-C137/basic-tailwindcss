@@ -28,3 +28,15 @@
     * แนวนอน = px-{size}
     * แนวตั้ง = py-{size}
     * ทุกทิศทาง = p-{size}
+
+- Border การจัดการเส้นขอบ
+    * ขนาดเส้นขอบ Link: https://tailwindcss.com/docs/border-width
+    * สีเส้นขอบ (Border Color) Link: https://tailwindcss.com/docs/border-color
+    * ความโค้งเส้นขอบ (Border Radius) Link: https://tailwindcss.com/docs/border-radius
+    * รูปแบบเส้นขอบ (Border Style) Link: https://tailwindcss.com/docs/border-style
+
+- Box Shadow Link: https://tailwindcss.com/docs/box-shadow
+
+- Pseudo Selector กำหนดรูปแบบการทำงานโดยอ้างอิงตามเงื่อนไขที่กำหนดใน Selector ที่เราสนใจ
+    * focus:bg-green-200
+    * hover:bg-blue-200
