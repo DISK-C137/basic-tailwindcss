@@ -28,3 +28,36 @@
     * แนวนอน = px-{size}
     * แนวตั้ง = py-{size}
     * ทุกทิศทาง = p-{size}
+
+- Border การจัดการเส้นขอบ
+    * ขนาดเส้นขอบ Link: https://tailwindcss.com/docs/border-width
+    * สีเส้นขอบ (Border Color) Link: https://tailwindcss.com/docs/border-color
+    * ความโค้งเส้นขอบ (Border Radius) Link: https://tailwindcss.com/docs/border-radius
+    * รูปแบบเส้นขอบ (Border Style) Link: https://tailwindcss.com/docs/border-style
+
+- Box Shadow Link: https://tailwindcss.com/docs/box-shadow
+
+- Pseudo Selector กำหนดรูปแบบการทำงานโดยอ้างอิงตามเงื่อนไขที่กำหนดใน Selector ที่เราสนใจ
+    * focus:bg-green-200
+    * hover:bg-blue-200
+
+- Responsive Web Design
+    * container = กล่องบรรจุ element
+    * Breakpoint = จุดที่ทำให้เว็บเพจปรับขนาดตามอุปกรณ์ต่าง ๆ
+
+- Flexbox คือ เครื่องมือใน css ที่ช่วยให้การจัดการ element ต่าง ๆ ในหน้าเว็บมีความง่ายและยืดหยุ่นมากยิ่งขึ้น
+    * จัดเรียงตำแหน่งของ element ได้ง่ายขึ้น เรียงจากบนลงล่าง ซ้ายไปขวา อื่น ๆ
+    * กำหนดขนาดให้พอดีกับพื้นที่ว่างแบบอัตโนมัติ (Sizing)
+    ประกอบด้วย
+    * container และ item (element)
+
+- Flex Direction เป็นการกำหนดทิศทางของ element
+    * row = วาง item ในแนวนอนทิศทางเดียวกันกับแกนหลัก
+    * row-reverse = จัดวาง item ในแนวนอนทิศทางตรงข้ามกับแกนหลัก
+    * column = จัดวาง item ในแนวตั้งทิศทางเดียวกับแกนหลัก
+    * column-reverse = จัดวาง item ในแนวตั้งทิศทางตรงข้างกับแกนหลัก
+
+- Flex Wrap ใช้ในกรณีที่ขนาด items ใหญ่กว่าพื้นที่ container
+    * nowrap = จัดวาง items ที่เกินพื้นที่ container ไปด้านขวามือ
+    * wrap = จัดวาง items ที่เกินพื้นที่ container เรียงจากบนลงล่าง
+    * wrap-reverse = จัดวาง items ที่เกินพื้นที่ container เรียงจากล่างขึ้นบน

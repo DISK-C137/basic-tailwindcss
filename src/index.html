@@ -4,13 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CSS เบื้องต้น</title>
     <link href="./output.css" rel="stylesheet">
 </head>
 
 <body>
     <!-- <h1 class="text-3xl font-bold underline">
-        Hello world!
+        Tailwind CSS เบื้องต้น
     </h1>
+    <br>
     <div class="bg-green-500">
         <div class="text-white text-sm">Hello Sir</div>
         <div class="text-white text-base">Hello Sir</div>
@@ -18,12 +20,12 @@
         <div class="text-white text-xl">Hello Sir</div>
         <div class="text-white text-2xl">Hello Sir</div>
         <div class="text-white text-4xl">Hello Sir</div>
-        <hr>
+        <hr class="m-2">
         <div class="text-white text-4xl uppercase">Hello Sir</div>
         <div class="text-white text-4xl lowercase">Hello Sir</div>
         <div class="text-white text-4xl capitalize">Hello Sir</div>
         <div class="text-white text-4xl italic">Hello Sir</div>
-        <hr>
+        <hr class="m-2">
         <div class="text-white text-base font-thin">Hello Sir</div>
         <div class="text-white text-base font-extralight">Hello Sir</div>
         <div class="text-white text-base font-light">Hello Sir</div>
@@ -33,24 +35,87 @@
         <div class="text-white text-base font-bold">Hello Sir</div>
         <div class="text-white text-base font-extrabold">Hello Sir</div>
         <div class="text-white text-base font-black">Hello Sir</div>
-        <hr>
+        <hr class="m-2">
         <div class="text-white text-2xl font-black text-left">Hello Sir</div>
         <div class="text-white text-2xl font-black text-center">Hello Sir</div>
         <div class="text-white text-2xl font-black text-right">Hello Sir</div>
-        <hr>
+        <hr class="m-2">
         <div class="text-white text-2xl font-black text-left text-opacity-30">Hello Sir</div>
         <div class="text-white text-2xl font-black text-center text-opacity-60">Hello Sir</div>
         <div class="text-white text-2xl font-black text-right text-opacity-90">Hello Sir</div>
-        <hr>
+        <hr class="m-2">
         <div class="bg-red-500 text-white text-center font-black w-40 h-40">1</div>
     </div>
-    <hr> -->
+
+    <hr class="m-2">
+
     <div class="bg-blue-500 mb-3">
         <div class="bg-red-500 text-white text-center font-bold">Content</div>
     </div>
     <div class="bg-blue-500 mt-3 p-4">
         <div class="bg-red-500 text-white text-center font-bold p-2">Content</div>
     </div>
+
+    <hr class="m-2">
+
+    <button class="bg-green-500 text-white m-4 p-5 border border-red-500">Border</button>
+    <button class="bg-green-500 text-white m-4 p-5 border-8 border-red-500">Border</button>
+    <button class="bg-green-500 text-white m-4 p-5 border border-red-500 border-x-8">Border</button>
+
+    <hr class="m-2">
+
+    <button class="bg-green-500 text-white m-4 p-5 rounded">Rounded</button>
+    <button class="bg-green-500 text-white m-4 p-5 rounded-sm">Rounded</button>
+    <button class="bg-green-500 text-white m-4 p-5 rounded-md">Rounded</button>
+    <button class="bg-green-500 text-white m-4 p-5 rounded-lg">Rounded</button>
+    <button class="bg-green-500 text-white m-4 p-5 rounded-xl">Rounded</button>
+    <button class="bg-green-500 text-white m-4 p-5 rounded-3xl">Rounded</button>
+    <button class="bg-green-500 text-white m-4 p-5 rounded-full">Rounded</button>
+
+    <button class="bg-green-500 text-white m-4 p-5 rounded-r-full">Rounded</button>
+
+    <hr class="m-2">
+
+    <button class="bg-green-500 text-white m-4 p-5 border-8 border-red-500 border-solid">Border</button>
+    <button class="bg-green-500 text-white m-4 p-5 border-8 border-red-500 border-none">Border</button>
+    <button class="bg-green-500 text-white m-4 p-5 border-8 border-red-500 border-dashed">Border</button>
+    <button class="bg-green-500 text-white m-4 p-5 border-8 border-red-500 border-double">Border</button>
+
+    <hr class="m-2">
+
+    <section class="bg-blue-200">
+        <button class="bg-white m-10 p-5 shadow-2xl">Click</button>
+    </section>
+
+    <hr class="m-2">
+
+    <form action="" class="m-10">
+        <input type="text" class="bg-gray-200 focus:bg-green-300 p-2" placeholder="ป้อนข้อมูล">
+        <button class="bg-yellow-500 rounded-2xl p-2 hover:bg-red-500 hover:text-white">บันทึก</button>
+    </form>
+
+    <hr class="m-2"> -->
+
+    <!-- <div class="container bg-red-500 mx-auto">
+        <h1 class="text-4xl sm:text-yellow-500 md:text-white">Heading</h1>
+    </div> -->
+
+    <!-- <hr class="m-2"> -->
+
+    <!-- <div class="bg-yellow-500 w-auto flex flex-col-reverse">
+        <div class="w-10 h-10 bg-red-500">Box 1</div>
+        <div class="w-10 h-10 bg-red-500">Box 2</div>
+        <div class="w-10 h-10 bg-red-500">Box 3</div>
+    </div> -->
+
+    <!-- <hr class="m-2"> -->
+
+    <div class="bg-yellow-500 w-auto flex flex-wrap">
+        <div class="w-80 h-10 bg-red-500">Box 1</div>
+        <div class="w-80 h-10 bg-red-500">Box 2</div>
+        <div class="w-80 h-10 bg-red-500">Box 3</div>
+    </div>
+
 </body>
 
 </html>
