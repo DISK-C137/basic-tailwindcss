@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base{
+    a{
+        @apply text-red-500
+    }
+}
+
+@layer components{
+    .menu-button{
+        @apply text-white bg-green-500 p-3
+    }
+}
+
+@layer utilities{
+    .text-red-500{
+        color:#d60992;
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+}

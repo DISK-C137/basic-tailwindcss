@@ -61,3 +61,87 @@
     * nowrap = จัดวาง items ที่เกินพื้นที่ container ไปด้านขวามือ
     * wrap = จัดวาง items ที่เกินพื้นที่ container เรียงจากบนลงล่าง
     * wrap-reverse = จัดวาง items ที่เกินพื้นที่ container เรียงจากล่างขึ้นบน
+
+- Grow & Shrink
+    * flex-1 = ทำให้ item ที่อยู่ในแถวเดียวกันมีขนาดเท่ากัน
+    * shrink = ให้ item หดตัวขนาดเท่าใดเมื่อเทียบกับ item อื่น ๆ (ค่าเริ่มต้นเป็น 1)
+    * grow = ให้ item ขยายตัวเท่าใดเมื่อเทียบกับ item อื่น ๆ (ค่าเริ่มต้นเป็น 0)
+
+- Grid Layout = คือ Layout ที่ใช้ในการควบคุมและจัดสรรพื้นที่ให้วัตถุต่าง ๆ ในหน้าเว็บ โดยองค์ประกอบของ Grid จะมี 2 ส่วนได้แก่
+    * Row (แถว)
+    * Column (คอลัมน์)
+
+- Gap คือ การกำหนดช่องว่างหรือระยะห่างระหว่าง items ที่ทำงานใน Flexbox หรือ Grid Layout ซึ่งสามารถกำหนดได้ทั้งรูปแบบแนวตั้งและแนวนอน
+    * gap-size (กำหนดช่องว่างแนวตั้งและแนวนอน)
+    * gap-x-size (กำหนดช่องว่างแนวนอน)
+    * gap-y-size (กำหนดช่องว่างแนวตั้ง)
+
+- Justify-Items = การจัดวางตำแหน่ง Item ทุกตัวที่อยู่ในแถว
+    * start = ชิดซ้าย
+    * center = ชิดขวา
+    * end = ชิดขวา
+    * stretch = ปรับขนาด item ทั้งหมดให้เต็มพื้นที่
+
+- Justify-Self = จัดวางตำแหน่ง item ที่สนใจให้อยู่ในพื้นที่ ที่ต้องการ
+    * start = ชิดซ้าย
+    * center = ชิดขวา
+    * end = ชิดขวา
+
+- Layer & Apply
+    (
+        Tailwind Directives
+        - @taliwind base; จัดการ element (tag)
+        - @tailwind components; จัดการ class
+        - @tailwind utilities; ปรับแต่ง class
+
+        TailWind CSS คือ
+        Utility-First CSS Framework เป็นการจัดการโดยตรงกับ Element ที่เป็น Class ย่อย ๆ และนำมาประกอบกันในภายหลัง และเพื่อความสะดวกในการใช้งาน class ย่อย ๆ ซ้ำกันใน TailWind CSS จะใช้คำสั่ง "@apply" เพื่อรวม class และ สร้าง class ใหม่ได้
+
+        // ใช้ class ซ้ำกัน
+        <a href="#" class="text-green-500">Menu 1</a>
+        <a href="#" class="text-green-500">Menu 2</a>
+        <a href="#" class="text-green-500">Menu 3</a>
+
+        // ประกาศได้ในที่เดียว
+        @layer base{
+            a{
+                @apply text-green-500
+            }
+        }
+
+        * กำหนดกฏในไฟล์ input.css
+    )
+
+- Components
+    (
+        // ใช้ class ซ้ำกัน หลาย ๆ class
+        <a href="#" class="text-white bg-red-500 p-3">Menu 1</a>
+        <a href="#" class="text-white bg-red-500 p-3">Menu 2</a>
+        <a href="#" class="text-white bg-red-500 p-3">Menu 3</a>
+
+        // สามารถยุบรวม class มาเป็น class ใหม่ได้ (menu-button)
+        <a href="#" class="menu-button">Menu 1</a>
+        <a href="#" class="menu-button">Menu 2</a>
+        <a href="#" class="menu-button">Menu 3</a>
+
+        @layer components{
+            .menu-button{
+                @apply text-white bg-red-500 p-3
+            }
+        }
+
+        * กำหนดกฏในไฟล์ input.css
+    )
+
+- utilities Class
+    (
+        // class เดิมก่อนปรับแต่ง
+        <h1 class="text-red-500">Hello Sir!</h1>
+
+        //ทำการปรับแต่ง
+        @layer utilities{
+            .text-red-500{
+                color:blue; //ปรับให้เป็นสีน้ำเงิน
+            }
+        }
+    )
